@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Student Registration and Result Portal">
+
+    <title>Student Registration & Result Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <div class="brand">
+
+                <div class="logo">
+                    SR
+                </div>
+
+                <div>
+                    <h1>Student Portal</h1>
+                    <p>Registration & Result Management</p>
+                </div>
+
+            </div>
+
+            <nav class="navigation">
+                <a href="#registration">Registration</a>
+                <a href="#result">Result</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <span class="badge">
+                    HTML5 + CSS3 Mini Project
+                </span>
+
+                <h2>
+                    Student Registration
+                    <span>& Result Portal</span>
+                </h2>
+
+                <p>
+                    A responsive student portal for entering
+                    personal details, selecting courses and
+                    managing academic results in a structured
+                    and professional interface.
+                </p>
+
+                <a href="#registration" class="hero-button">
+                    Register Student →
+                </a>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="hero-icon">
+                    🎓
+                </div>
+
+                <h3>Academic Portal</h3>
+
+                <p>
+                    Simple, responsive and student-friendly
+                    registration interface.
+                </p>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>01</strong>
+                        <small>Registration</small>
+                    </div>
+
+                    <div>
+                        <strong>05</strong>
+                        <small>Subjects</small>
+                    </div>
+
+                    <div>
+                        <strong>100%</strong>
+                        <small>Responsive</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+
+        <!-- ================= REGISTRATION ================= -->
+
+        <section id="registration" class="section-card">
+
+            <div class="section-heading">
+
+                <div class="heading-icon">
+                    👤
+                </div>
+
+                <div>
+                    <h2>Student Registration</h2>
+                    <p>
+                        Enter the student's personal and
+                        academic information.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form class="registration-form">
+
+
+                <!-- PERSONAL DETAILS -->
+
+                <div class="form-section">
+
+                    <h3>
+                        <span>01</span>
+                        Personal Details
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="studentName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                name="studentName"
+                                placeholder="Enter student's full name"
+                                pattern="[A-Za-z ]{3,50}"
+                                required
+                            >
+
+                            <small>
+                                Enter 3–50 characters using
+                                letters and spaces.
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="rollNumber">
+                                Roll Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="rollNumber"
+                                name="rollNumber"
+                                placeholder="Example: CSE001"
+                                pattern="[A-Za-z0-9]{3,15}"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="student@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Mobile Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="9876543210"
+                                pattern="[0-9]{10}"
+                                maxlength="10"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="dob">
+                                Date of Birth
+                            </label>
+
+                            <input
+                                type="date"
+                                id="dob"
+                                name="dob"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <select
+                                id="gender"
+                                name="gender"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Gender
+                                </option>
+
+                                <option value="female">
+                                    Female
+                                </option>
+
+                                <option value="male">
+                                    Male
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="address">
+                                Address
+                            </label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="3"
+                                placeholder="Enter complete address"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACADEMIC DETAILS -->
+
+                <div class="form-section">
+
+                    <h3>
+                        <span>02</span>
+                        Academic Details
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="course">
+                                Course
+                            </label>
+
+                            <select
+                                id="course"
+                                name="course"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Course
+                                </option>
+
+                                <option>
+                                    B.E Computer Science
+                                </option>
+
+                                <option>
+                                    B.Tech Information Technology
+                                </option>
+
+                                <option>
+                                    B.E Electronics & Communication
+                                </option>
+
+                                <option>
+                                    B.E Electrical & Electronics
+                                </option>
+
+                                <option>
+                                    B.E Mechanical Engineering
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="department">
+                                Department
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Department
+                                </option>
+
+                                <option>
+                                    Computer Science
+                                </option>
+
+                                <option>
+                                    Information Technology
+                                </option>
+
+                                <option>
+                                    Electronics & Communication
+                                </option>
+
+                                <option>
+                                    Electrical & Electronics
+                                </option>
+
+                                <option>
+                                    Mechanical
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="semester">
+                                Semester
+                            </label>
+
+                            <select
+                                id="semester"
+                                name="semester"
+                                required
+                            >
+
+                                <option value="">
+                                    Select Semester
+                                </option>
+
+                                <option>Semester 1</option>
+                                <option>Semester 2</option>
+                                <option>Semester 3</option>
+                                <option>Semester 4</option>
+                                <option>Semester 5</option>
+                                <option>Semester 6</option>
+                                <option>Semester 7</option>
+                                <option>Semester 8</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="academicYear">
+                                Academic Year
+                            </label>
+
+                            <input
+                                type="text"
+                                id="academicYear"
+                                name="academicYear"
+                                placeholder="2026 - 2027"
+                                pattern="[0-9]{4} - [0-9]{4}"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MARKS -->
+
+                <div class="form-section">
+
+                    <h3>
+                        <span>03</span>
+                        Subject Marks
+                    </h3>
+
+                    <p class="section-description">
+                        Enter marks obtained in each subject.
+                        Maximum marks are 100.
+                    </p>
+
+
+                    <div class="marks-table-wrapper">
+
+                        <table class="marks-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Subject</th>
+                                    <th>Maximum Marks</th>
+                                    <th>Marks Obtained</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td data-label="S.No">
+                                        01
+                                    </td>
+
+                                    <td data-label="Subject">
+                                        Web Technology
+                                    </td>
+
+                                    <td data-label="Maximum Marks">
+                                        100
+                                    </td>
+
+                                    <td data-label="Marks Obtained">
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            max="100"
+                                            placeholder="0"
+                                            required
+                                        >
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td data-label="S.No">
+                                        02
+                                    </td>
+
+                                    <td data-label="Subject">
+                                        Database Management
+                                    </td>
+
+                                    <td data-label="Maximum Marks">
+                                        100
+                                    </td>
+
+                                    <td data-label="Marks Obtained">
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            max="100"
+                                            placeholder="0"
+                                            required
+                                        >
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td data-label="S.No">
+                                        03
+                                    </td>
+
+                                    <td data-label="Subject">
+                                        Computer Networks
+                                    </td>
+
+                                    <td data-label="Maximum Marks">
+                                        100
+                                    </td>
+
+                                    <td data-label="Marks Obtained">
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            max="100"
+                                            placeholder="0"
+                                            required
+                                        >
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td data-label="S.No">
+                                        04
+                                    </td>
+
+                                    <td data-label="Subject">
+                                        Operating Systems
+                                    </td>
+
+                                    <td data-label="Maximum Marks">
+                                        100
+                                    </td>
+
+                                    <td data-label="Marks Obtained">
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            max="100"
+                                            placeholder="0"
+                                            required
+                                        >
+
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td data-label="S.No">
+                                        05
+                                    </td>
+
+                                    <td data-label="Subject">
+                                        Software Engineering
+                                    </td>
+
+                                    <td data-label="Maximum Marks">
+                                        100
+                                    </td>
+
+                                    <td data-label="Marks Obtained">
+
+                                        <input
+                                            type="number"
+                                            min="0"
+                                            max="100"
+                                            placeholder="0"
+                                            required
+                                        >
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM ACTIONS -->
+
+                <div class="form-actions">
+
+                    <button
+                        type="reset"
+                        class="btn btn-secondary"
+                    >
+                        Clear Form
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Submit Registration →
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- ================= RESULT ================= -->
+
+        <section id="result" class="result-section">
+
+            <div class="section-heading">
+
+                <div class="heading-icon result-icon">
+                    📊
+                </div>
+
+                <div>
+                    <h2>Student Result</h2>
+                    <p>
+                        Academic performance summary
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- STUDENT SUMMARY -->
+
+            <div class="student-summary">
+
+                <div class="student-avatar">
+                    LP
+                </div>
+
+                <div class="student-info">
+
+                    <h3>Lakshmi Priya J K</h3>
+
+                    <p>
+                        Computer Science Engineering
+                    </p>
+
+                </div>
+
+                <div class="student-meta">
+
+                    <div>
+                        <span>Roll Number</span>
+                        <strong>CSE001</strong>
+                    </div>
+
+                    <div>
+                        <span>Semester</span>
+                        <strong>Semester 5</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULT TABLE -->
+
+            <div class="result-card">
+
+                <div class="result-card-header">
+
+                    <div>
+                        <h3>Academic Performance</h3>
+                        <p>
+                            End Semester Examination
+                        </p>
+                    </div>
+
+                    <span class="pass-badge">
+                        PASS
+                    </span>
+
+                </div>
+
+
+                <div class="result-table-wrapper">
+
+                    <table class="result-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>S.No</th>
+                                <th>Subject</th>
+                                <th>Maximum</th>
+                                <th>Obtained</th>
+                                <th>Grade</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>01</td>
+                                <td>Web Technology</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>
+                                    <span class="grade grade-a">
+                                        A
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>Database Management</td>
+                                <td>100</td>
+                                <td>90</td>
+                                <td>
+                                    <span class="grade grade-aplus">
+                                        A+
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>03</td>
+                                <td>Computer Networks</td>
+                                <td>100</td>
+                                <td>82</td>
+                                <td>
+                                    <span class="grade grade-a">
+                                        A
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>04</td>
+                                <td>Operating Systems</td>
+                                <td>100</td>
+                                <td>88</td>
+                                <td>
+                                    <span class="grade grade-a">
+                                        A
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>05</td>
+                                <td>Software Engineering</td>
+                                <td>100</td>
+                                <td>92</td>
+                                <td>
+                                    <span class="grade grade-aplus">
+                                        A+
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- RESULT SUMMARY -->
+
+                <div class="result-summary">
+
+                    <div class="summary-box">
+
+                        <span>Total Marks</span>
+
+                        <strong>
+                            437 / 500
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-box">
+
+                        <span>Percentage</span>
+
+                        <strong>
+                            87.40%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-box">
+
+                        <span>Overall Grade</span>
+
+                        <strong>
+                            A
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-box status-box">
+
+                        <span>Result Status</span>
+
+                        <strong>
+                            PASS
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div>
+
+            <h3>Student Portal</h3>
+
+            <p>
+                Student Registration & Result Management
+                System
+            </p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Student Portal | HTML5 & CSS3 Mini Project
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
